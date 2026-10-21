@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf5ed">
+  <meta name="description" content="Um recadinho especial para o cabritinho. 🐐">
+  <title>Um recado pro cabritinho 🐐</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='85'%3E🐐%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <p class="eyebrow"><span aria-hidden="true">✦</span> CORREIO DO CABRITINHO <span aria-hidden="true">✦</span></p>
+
+    <article class="card" aria-label="Um recadinho para você">
+      <figure class="photo-frame">
+        <img class="photo" src="./IMG_9619.jpeg" width="1264" height="843" alt="O cabritinho da vez: uma menina caracterizada de cabritinho, entre duas cabras.">
+        <figcaption><span>o trio de milhões</span><span aria-hidden="true">🐐 + 🐐 + 🐐</span></figcaption>
+      </figure>
+
+      <div class="card-content" id="content">
+        <section class="panel" aria-labelledby="question-title">
+          <span class="tag">TEM UM RECADINHO PRA VOCÊ</span>
+          <h1 id="question-title" tabindex="-1"><span class="heading-emoji" aria-hidden="true">🐐</span> ATENÇÃO,<br><span class="accent">CABRITINHO!</span></h1>
+          <p class="greeting">E aí, criatura KKKKK</p>
+          <p class="question">Como foi a consulta de hoje? 👀</p>
+          <div class="answers">
+            <button class="button button-happy" type="button" data-answer="happy">😁 Foi boa! <span aria-hidden="true">↗</span></button>
+            <button class="button button-sad" type="button" data-answer="sad">😭 Foi péssima! <span aria-hidden="true">↗</span></button>
+          </div>
+          <p class="little-note">Pode contar. As cabras são de confiança.</p>
+        </section>
+      </div>
+      <div class="card-footer" aria-hidden="true"><span></span> um carinho em forma de link ♡ <span></span></div>
+    </article>
+    <p class="page-footer">aprovado pelo conselho das cabras <span aria-hidden="true">🐐</span></p>
+    <noscript><p class="noscript">Ative o JavaScript do navegador para escolher uma resposta e ler seu recadinho.</p></noscript>
+  </main>
+
+  <!-- Os textos ficam em HTML para facilitar a edição. -->
+  <template id="happy-template">
+    <section class="panel result result-happy" aria-labelledby="happy-title">
+      <span class="tag">O CONSELHO DAS CABRAS COMEMORA</span>
+      <h1 id="happy-title" tabindex="-1">EEEEBAAAA! <span class="result-emoji">🥳🐐</span></h1>
+      <p class="greeting">Que notícia boa, cabritinho KKKKK!</p>
+      <p>Já que deu tudo certo, temos um comunicado importante:</p>
+      <div class="invitation">
+        <span class="ticket-label">🍿 SESSÃO DA TARDE</span>
+        <p>👀 Essa pessoa que te mandou o link quer te convidar pra assistir <strong>Cara de Barro</strong> hoje à tarde! 🍿🎬</p>
+      </div>
+      <p><strong>Se tu quiser sair, responde ele no PV!</strong></p>
+      <p class="aside">Prometo que o convite não foi ideia das cabras KKKKK 🐐</p>
+      <button class="button button-back" type="button" data-back><span aria-hidden="true">←</span> Voltar</button>
+    </section>
+  </template>
+
+  <template id="sad-template">
+    <section class="panel result result-sad" aria-labelledby="sad-title">
+      <span class="tag">UM POUQUINHO DE CARINHO POR AQUI</span>
+      <h1 id="sad-title" tabindex="-1">OXEEE, MEU DEUS,<br><span class="accent">CABRITINHO!</span> <span class="result-emoji">😭🐐</span></h1>
+      <p class="greeting">O que foi que aconteceu, criatura?</p>
+      <p>Essa pessoa que te mandou o link ficou preocupada e quer saber o que rolou contigo.</p>
+      <div class="comfort"><p>Chama ele no PV e conta, tá?</p><p><strong>Espero que as coisas melhorem logo!</strong> <span aria-hidden="true">♡</span></p></div>
+      <button class="button button-back" type="button" data-back><span aria-hidden="true">←</span> Voltar</button>
+    </section>
+  </template>
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+</body>
+</html>
